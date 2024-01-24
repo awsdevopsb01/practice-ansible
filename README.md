@@ -19,3 +19,10 @@ name: Devops
 6. yaml files contains an extension of yaml, yml.
 
 Ansible: 
+
+Variables:
+
+# variables are accessed using {{}}
+# Ansible supports quotes, but not mandatory always.
+# String - {{ Varaible }} - quotes not required
+# {{ variable }} alone --> use either single quotes or double quotes 
