@@ -25,4 +25,6 @@ Variables:
 # variables are accessed using {{}}
 # Ansible supports quotes, but not mandatory always.
 # String - {{ Varaible }} - quotes not required
-# {{ variable }} alone --> use either single quotes or double quotes 
+# {{ variable }} alone --> use either single quotes or double quotes
+# variable created inside a task cannot be accessed by other tasks in the playbook.
+# variable created on play level can be accessed by other tasks in the playbook.

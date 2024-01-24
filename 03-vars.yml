@@ -15,3 +15,12 @@
         msg: URL - {{ URL }}
       vars:
         URL: task.sample.com
+
+- name: Demo on ansible variables - var file
+  hosts: all
+  vars-file:
+    ext-vars.yml
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL - {{ URL }}
