@@ -29,3 +29,19 @@ Variables:
 # variable created inside a task cannot be accessed by other tasks in the playbook.
 # variable created on play level can be accessed by other tasks in the playbook.
 # Var file concept is used on play level only. We can use var file on task level.
+
+### Variable Precedence (Highest to lowest)
+1. Command line Variable
+2. Task level
+3. Variable files
+4. Play level
+5. Inventory level
+
+### Variable Precedence when considered Role level variables
+1. Command line Variables
+2. Task level Variables
+3. Vars directory from roles
+4. variables from file
+5. Play level variables
+6. Inventory variables
+7. defaults directory from roles
