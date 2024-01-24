@@ -14,4 +14,4 @@
       ansible.builtin.debug:
         msg: URL - {{ URL }}
       vars:
-        URL: play.sample.com
+        URL: task.sample.com
