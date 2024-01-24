@@ -1,0 +1,9 @@
+- name: Demo on sample play
+  hosts: all
+  tasks:
+  - name: First task
+    ansible.builtin.debug:
+    - msg: Hello Ansible
+  - name: Second Task
+    ansible.builtin.debug:
+      msg: Hello Second task
