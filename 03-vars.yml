@@ -18,7 +18,7 @@
 
 - name: Demo on ansible variables - var file
   hosts: all
-  vars-file:
+  vars_files:
     ext-vars.yml
   tasks:
     - name: Print URL

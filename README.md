@@ -28,3 +28,4 @@ Variables:
 # {{ variable }} alone --> use either single quotes or double quotes
 # variable created inside a task cannot be accessed by other tasks in the playbook.
 # variable created on play level can be accessed by other tasks in the playbook.
+# Var file concept is used on play level only. We can use var file on task level.
