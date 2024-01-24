@@ -1,0 +1,4 @@
+- name: roles example
+  hosts: all
+  roles:
+    - sample
