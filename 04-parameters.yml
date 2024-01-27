@@ -1,5 +1,6 @@
 - name: lookup ssm parameter store in nominated region
   hosts: all
   tasks:
-    - name: Print a parameter
-      msg: Parameter - "{{ lookup('aws_ssm', 'test.sample', region='us-east-1' ) }}"
+  - name: Print a parameter
+    ansible.builtin.debug:
+    msg: Parameter - "{{ lookup('aws_ssm', 'test.sample', region='us-east-1' ) }}"
