@@ -1,5 +1,6 @@
 - name: lookup ssm parameter store in nominated region
-  hosts: all
+  hosts: localhost
+  connection: local
   tasks:
   - name: Print a parameter
     ansible.builtin.debug:
