@@ -19,7 +19,7 @@
 - name: Demo on ansible variables - var file
   hosts: all
   vars_files:
-    ext-vars.yml
+    ext-main.yml
   tasks:
     - name: Print URL
       ansible.builtin.debug:
